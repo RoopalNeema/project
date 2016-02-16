@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ChatBox</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="navDrawerItems">
+        <item>Profile</item>
+        <item>Status</item>
+        <item>Account</item>
+        <item>Contacts</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+        <item>Sign Out</item>
+    </string-array>
+
+    <string-array name="navDrawerIcons">
+
+        <item>@drawable/profile</item>
+        <item>@drawable/status1</item>
+        <item>@drawable/account</item>
+        <item>@drawable/contacts</item>
+        <item>@drawable/notification</item>
+        <item>@drawable/settings</item>
+        <item>@drawable/signout</item>
+
+
+    </string-array>
+</resources>

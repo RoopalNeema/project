@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="120dp"
+    android:weightSum="2"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:layout_weight="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_image"
+            android:scaleType="fitXY"
+            android:contentDescription="Main Image"
+            android:padding="1dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image_border"
+            android:background="@drawable/image_border"
+            android:contentDescription="Image Border"
+            android:padding="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/image"
+            android:layout_alignEnd="@+id/image" />
+
+        <ImageView android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="image"
+            android:id="@+id/image"
+            android:clickable="true"
+            android:padding="4dp"
+            android:layout_margin="8dp"
+            android:scaleType="fitXY"
+            android:onClick="loadImagefromGallery"
+            android:src="@drawable/edit_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".20"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textview_border"
+            android:background="@drawable/textview_border"
+            android:hint="Enter sample text..."
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="6dp"
+            android:textSize="18sp"
+            android:gravity="center_vertical"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/image_edit"
+            android:contentDescription="Edit image icon"
+            android:clickable="true"
+            android:padding="4dp"
+            android:layout_margin="8dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/editor_states"
+            android:src="@drawable/edit_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".30"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="This is not Your Username.This name will be visible to your ChatBox Contacts. "/>
+    </RelativeLayout>
+</LinearLayout>
